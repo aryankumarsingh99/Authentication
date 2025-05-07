@@ -9,9 +9,12 @@ const app = express(); // create app
 app.use(express.json());
 app.use(cors());
 
-// const mongoose = require('mongoose');
-const uri =
-  process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/Authentication";
+const uri = process.env.MONGO_URI;
+
+if (!uri) {
+  console.error("Error: MONGODB_URI is not defined in environment variables.");
+  process.exit(1); // Exit the application with an error code
+}
 
 const clientOptions = {
   serverApi: { version: "1", strict: true, deprecationErrors: true },
@@ -25,9 +28,9 @@ async function run() {
     console.log(
       "Pinged your deployment. You successfully connected to MongoDB!"
     );
-  } finally {
-    // Ensures that the client will close when you finish/error
-    await mongoose.disconnect();
+  } catch (error) {
+    console.error("Failed to connect to MongoDB:", error);
+    process.exit(1); // Exit the application with an error code
   }
 }
 run().catch(console.dir);
