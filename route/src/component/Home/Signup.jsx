@@ -18,7 +18,7 @@ function SignUp() {
       return;
     } else {
       axios
-        .post("http://localhost:8000/signup", { name, email, password })
+        .post("https://authentication-hpnv.onrender.com/signup", { name, email, password })
         .then((result) => {
           console.log(result);
           if (result.data.message === "success") {
