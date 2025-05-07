@@ -17,7 +17,7 @@ function Home() {
         </NavLink>
         <NavLink
           style={{ color: " white", textDecoration: "none" }}
-          to="/login"
+          to="/"
           className={({ isActive }) =>
             isActive
               ? "text-black bg-white  px-3 py-2 rounded-md"
