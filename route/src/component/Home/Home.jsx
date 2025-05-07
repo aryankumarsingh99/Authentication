@@ -17,7 +17,7 @@ function Home() {
         </NavLink>
         <NavLink
           style={{ color: " white", textDecoration: "none" }}
-          to="/"
+          to="/login"
           className={({ isActive }) =>
             isActive
               ? "text-black bg-white  px-3 py-2 rounded-md"
@@ -45,6 +45,11 @@ function Home() {
         <h1 className="flex justify-center items-center text-5xl pt-10 font-medium font-serif">
           Welcome to Home
         </h1>
+      </div>
+<div className="flex justify-center items-center pt-10 gap-10 flex-wrap">
+      <img src="https://img.fruugo.com/product/3/51/1786218513_0340_0340.jpg" alt="" />
+      <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1432126142i/25569424.jpg" alt="" />
+ 
       </div>
     </>
   );
