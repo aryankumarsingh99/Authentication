@@ -46,9 +46,9 @@ function Home() {
           Welcome to Home
         </h1>
       </div>
-<div className="flex justify-center items-center pt-10 gap-10 flex-wrap">
-      <img src="https://img.fruugo.com/product/3/51/1786218513_0340_0340.jpg" alt="" />
-      <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1432126142i/25569424.jpg" alt="" />
+      <div className="flex justify-center items-center pt-10 gap-10 flex-wrap">
+        <img src="https://img.fruugo.com/product/3/51/1786218513_0340_0340.jpg" alt="" />
+        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1432126142i/25569424.jpg" alt="" />
  
       </div>
     </>
