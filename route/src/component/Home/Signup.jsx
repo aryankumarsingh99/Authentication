@@ -23,7 +23,7 @@ function SignUp() {
           console.log(result);
           if (result.data.message === "success") {
             alert("Signup Success");
-            navigate("/login");
+            navigate("/");
           } else {
             alert(result.data.message);
           }
