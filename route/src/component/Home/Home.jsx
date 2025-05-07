@@ -35,7 +35,7 @@ function Home() {
         <button className="flex justify-center  bg-gray-600 pt-1 gap-20 w-23 rounded-2xl  text-xl">
           <NavLink
             style={{ color: " white", textDecoration: "none" }}
-            to="/login"
+            to="/home"
           >
             LogOut
           </NavLink>
