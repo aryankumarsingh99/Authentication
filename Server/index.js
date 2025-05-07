@@ -75,4 +75,4 @@ app.post("/signup", (req, res) => {
 //Connection mongoose
 // mongoose.connect("mongodb://127.0.0.1:27017/Authentication");
 
-app.listen(8000, () => console.log("Server is running"));
+app.listen(process.env.PORT || 8000, () => console.log("Server is running"));
